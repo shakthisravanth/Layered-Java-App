@@ -13,10 +13,6 @@
 // Inside the constructor:
 // Use the 'this' keyword to assign parameter values to class variables
 
-// Create getter methods for each variable:
-// getAccountNumber() → returns account number
-// getHolderName() → returns account holder name
-// getBalance() → returns current balance
 
 // Create a method named showAccountDetails()
 
@@ -24,9 +20,29 @@
 // Print account number
 // Print holder name
 // Print balance
+// Print an empty line for better formatting
 
-// Learning outcome:
-// Understanding packages
-// Using private variables (encapsulation)
-// Using constructors and getters
-// Creating a method to display object details
+
+// Create a method named deposit(double amount)
+
+// Inside deposit method:
+// Check if the amount is greater than 0
+// If valid:
+// Increase the balance
+// Print success message with updated balance
+// If invalid:
+// Print error message "Invalid deposit amount"
+
+
+// Create a method named withdraw(double amount)
+
+// Inside withdraw method:
+// If amount is less than or equal to 0:
+// Print "Invalid withdrawal amount"
+
+// Else if amount is greater than balance:
+// Print "Insufficient balance"
+
+// Else:
+// Reduce the balance
+// Print success message with remaining balance

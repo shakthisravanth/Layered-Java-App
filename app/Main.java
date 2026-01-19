@@ -7,13 +7,17 @@
 // Inside the class, write the main method
 
 // Inside the main method:
-// Create an Account object by passing:
-// account number, holder name, and initial balance using the constructor
+// Create an Account object using:
+// account number, holder name, and initial balance
 
-// Call the showAccountDetails() method using the object
-// to display the account information on the screen
+// Call showAccountDetails() method:
+// To display the initial account information
 
-// Learning outcome:
-// Understanding how to use classes from another package
-// Creating objects from imported classes
-// Calling methods using object reference
+// Call deposit() method with a valid amount:
+// To increase the account balance
+
+// Call withdraw() method with a valid amount:
+// To decrease the account balance
+
+// Call withdraw() method with a large amount:
+// To test the "Insufficient balance" condition
