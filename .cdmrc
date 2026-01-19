@@ -1,0 +1,8 @@
+run-button: >
+  javac bank/*.java app/*.java &&
+  java -cp . app.Main
+
+terminals:
+  - javac bank/*.java app/*.java && java -cp . app.Main
+
+playground-view: terminal-editor
