@@ -7,26 +7,22 @@
 // Inside the class, write the main method
 
 // Inside the main method:
-// Print a heading to indicate polymorphism is being demonstrated
+
+// Create an Account reference pointing to a SavingsAccount object
+
+// Create another Account reference pointing to a CurrentAccount object
+
+// Call showAccountDetails() using the Account reference
+// This demonstrates that methods can be accessed through parent reference
 
 
-// Create two Account references:
-// One pointing to a SavingsAccount object
-// One pointing to a CurrentAccount object
-
-// Note for students:
-// This is called polymorphism — parent reference holding child object
+// Use type casting:
+// Convert the Account reference (acc1) into a SavingsAccount reference
+// This allows access to child-specific methods like showSavingsRules()
 
 
-// Print a heading for Savings Account transaction
+// Call withdraw() using acc1
+// This will follow the overridden withdrawal behavior of SavingsAccount
 
-// Call withdraw() using the Account reference for SavingsAccount
-// First withdrawal should fail due to minimum balance rule
-// Second withdrawal should pass
-
-
-// Print a heading for Current Account transaction
-
-// Call withdraw() using the Account reference for CurrentAccount
-// This withdrawal should pass because it follows parent class rules
-
+// Call withdraw() using acc2
+// This will follow the normal withdrawal behavior from Account / CurrentAccount

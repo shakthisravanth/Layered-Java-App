@@ -2,15 +2,29 @@
 
 // Make SavingsAccount inherit from the Account class using 'extends'
 
-// Declare a constant variable for minimum balance:
-// MIN_BALANCE = 1000
-// Use 'static final' so the value cannot be changed
+
+// Declare two constants using static final:
+// MIN_BALANCE (double) → minimum balance that must be maintained
+// INTEREST_RATE (double) → interest rate for savings account
+
+// Note for students:
+// static final is used because these values are fixed and shared by all objects
+
 
 // Create a constructor that accepts:
 // accountNumber, holderName, and balance
 
 // Inside the constructor:
 // Call the parent class constructor using super(accountNumber, holderName, balance)
+
+
+// Create a method named showSavingsRules()
+
+// Inside showSavingsRules():
+// Print a heading like "Savings Account Rules:"
+// Print the minimum balance
+// Print the interest rate
+// Print an empty line for formatting
 
 
 // Override the withdraw(double amount) method
@@ -26,4 +40,3 @@
 // Else:
 // Subtract the amount from balance
 // Print success message with remaining balance
-
