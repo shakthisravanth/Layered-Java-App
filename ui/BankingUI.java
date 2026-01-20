@@ -2,7 +2,9 @@
 
 // Import Account, SavingsAccount, and CurrentAccount classes from bank package
 
-// Import AccountRepository interface and InMemoryAccountRepository class from repository package
+// Import InMemoryAccountRepository from repository package
+
+// Import AccountService interface and AccountServiceImpl class from service package
 
 // Create a class named BankingUI
 
@@ -10,8 +12,9 @@
 
 // Inside the start() method:
 
-// Create a reference of AccountRepository
-// Assign it an object of InMemoryAccountRepository
+// Create an AccountService reference
+// Assign it an object of AccountServiceImpl
+// Pass a new InMemoryAccountRepository into the constructor
 
 
 // Create a SavingsAccount object
@@ -19,20 +22,16 @@
 // Create a CurrentAccount object
 
 
-// Add both account objects into the repository using addAccount()
+// Add both account objects using service.addAccount()
 
 
 // Print a heading for account details
 
-// Use a loop to:
-// Get all accounts from repository using getAllAccounts()
-// Call showAccountDetails() for each account
+// Call service.showAllAccounts() to display all accounts
 
 
 // Print a heading for transactions
 
-// Find account with account number 101 using findByAccountNumber()
-// Call withdraw() on that account
+// Call service.withdraw() with account number and amount for first account
 
-// Find account with account number 201 using findByAccountNumber()
-// Call withdraw() on that account
+// Call service.withdraw() with account number and amount for second account
