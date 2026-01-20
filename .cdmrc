@@ -1,5 +1,5 @@
 run-button: >
-  cd /home/damner/code/BankProject
+  cd /home/damner/code/BankProject && javac app/Main.java && java app.Main
 
 terminals:
   - cd /home/damner/code/BankProject && javac app/Main.java && java app.Main
