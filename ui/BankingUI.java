@@ -2,29 +2,37 @@
 
 // Import Account, SavingsAccount, and CurrentAccount classes from bank package
 
+// Import AccountRepository interface and InMemoryAccountRepository class from repository package
+
 // Create a class named BankingUI
 
 // Create a method named start()
 
 // Inside the start() method:
-// Create an Account reference for a SavingsAccount object
 
-// Create an Account reference for a CurrentAccount object
+// Create a reference of AccountRepository
+// Assign it an object of InMemoryAccountRepository
+
+
+// Create a SavingsAccount object
+
+// Create a CurrentAccount object
+
+
+// Add both account objects into the repository using addAccount()
 
 
 // Print a heading for account details
 
-// Call showAccountDetails() using the SavingsAccount reference
-
-
-// Print a heading for savings rules
-
-// Type cast the Account reference to SavingsAccount
-// Call showSavingsRules() using the casted object
+// Use a loop to:
+// Get all accounts from repository using getAllAccounts()
+// Call showAccountDetails() for each account
 
 
 // Print a heading for transactions
 
-// Call withdraw() using the SavingsAccount reference
+// Find account with account number 101 using findByAccountNumber()
+// Call withdraw() on that account
 
-// Call withdraw() using the CurrentAccount reference
+// Find account with account number 201 using findByAccountNumber()
+// Call withdraw() on that account
