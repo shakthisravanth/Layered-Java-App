@@ -1,31 +1,32 @@
 // Create a package named app
 
-// Import SavingsAccount class from bank package
-
-// Import CurrentAccount class from bank package
+// Import Account, SavingsAccount, and CurrentAccount classes from bank package
 
 // Create a class named Main
 
 // Inside the class, write the main method
 
 // Inside the main method:
-
-// Display a heading for Savings Account section
-
-// Create a SavingsAccount object by passing:
-// account number, holder name, and initial balance
-
-// Call withdraw() with an amount that still keeps minimum balance
-// Observe that withdrawal should be successful
-
-// Call withdraw() with an amount that breaks minimum balance rule
-// Observe that withdrawal should be denied
+// Print a heading to indicate polymorphism is being demonstrated
 
 
-// Display a heading for Current Account section
+// Create two Account references:
+// One pointing to a SavingsAccount object
+// One pointing to a CurrentAccount object
 
-// Create a CurrentAccount object by passing:
-// account number, holder name, and initial balance
+// Note for students:
+// This is called polymorphism — parent reference holding child object
 
-// Call withdraw() method
-// Observe that CurrentAccount follows normal Account withdrawal rules
+
+// Print a heading for Savings Account transaction
+
+// Call withdraw() using the Account reference for SavingsAccount
+// First withdrawal should fail due to minimum balance rule
+// Second withdrawal should pass
+
+
+// Print a heading for Current Account transaction
+
+// Call withdraw() using the Account reference for CurrentAccount
+// This withdrawal should pass because it follows parent class rules
+
