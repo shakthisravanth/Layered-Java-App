@@ -1,7 +1,8 @@
 run-button: >
-  cd /home/damner/code/BankProject && javac app/Main.java && java app.Main
+  javac model/*.java repository/*.java service/*.java ui/*.java app/*.java &&
+  java -cp . app.Main
 
 terminals:
-  - cd /home/damner/code/BankProject && javac app/Main.java && java app.Main
+  - javac model/*.java repository/*.java service/*.java ui/*.java app/*.java && java -cp . app.Main
 
 playground-view: terminal-editor
