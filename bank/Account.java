@@ -1,15 +1,13 @@
 // Create a package named bank
 
-// Create a class named Account inside the bank package
+// Create a class named Account
+
+// Make the Account class implement the BankOperations interface
 
 // Declare three protected variables:
 // accountNumber (int)
 // holderName (String)
 // balance (double)
-
-// Note for students:
-// 'protected' allows child classes (subclasses) to access these variables
-
 
 // Create a public constructor that accepts:
 // accountNumber, holderName, and balance
@@ -18,7 +16,7 @@
 // Use the 'this' keyword to assign parameter values to class variables
 
 
-// Create a method named showAccountDetails()
+// Implement the showAccountDetails() method from the interface
 
 // Inside showAccountDetails():
 // Print account number
@@ -27,7 +25,7 @@
 // Print an empty line for better formatting
 
 
-// Create a method named deposit(double amount)
+// Implement the deposit(double amount) method from the interface
 
 // Inside deposit method:
 // Check if amount is greater than 0
@@ -38,13 +36,13 @@
 // Print error message "Invalid deposit amount"
 
 
-// Create a method named withdraw(double amount)
+// Implement the withdraw(double amount) method from the interface
 
 // Inside withdraw method:
 // If amount is less than or equal to 0:
 // Print "Invalid withdrawal amount"
 
-// Else if amount is greater than current balance:
+// Else if amount is greater than balance:
 // Print "Insufficient balance"
 
 // Else:
