@@ -24,6 +24,9 @@
 // Inside the constructor:
 // Use the 'this' keyword to assign parameter values to class variables
 
+//     public int getAccountNumber() {
+//         return accountNumber;
+//     }
 
 // Implement the showAccountDetails() method from the interface
 
