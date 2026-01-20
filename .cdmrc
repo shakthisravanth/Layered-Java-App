@@ -1,9 +1,9 @@
 run-button: >
-  cd /home/damner/code/BankProject &&
-  javac model/*.java repository/*.java service/*.java ui/*.java app/*.java &&
-  java -cp . app.Main
+    find BankProject -name "*.java" > sources.txt &&
+    javac @sources.txt &&
+    java -cp BankProject app.Main
 
 terminals:
-  - cd /home/damner/code/BankProject && javac model/*.java repository/*.java service/*.java ui/*.java app/*.java && java -cp . app.Main
+    - find BankProject -name "*.java" > sources.txt && javac @sources.txt && java -cp BankProject app.Main
 
 playground-view: terminal-editor
